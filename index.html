@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makhosi weZulu - Home</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Makhosi weZulu Logo">
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span class="hamburger-icon"></span>
+        </button>
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+      <!-- Welcome Message -->
+      <section class="welcome-message">
+        <h1>Welcome to Makhosi weZulu</h1>
+        <p>Delivering renowned quality service and product to our clients.</p>
+    </section>
+
+<!-- Combined Image Section -->
+<section class="image-section">
+    <div class="image-container">
+        <!-- First Image with Overlay -->
+        <div class="image-background" style="background-image: url('images/home-back2.jpg');">
+            <div class="overlay-container">
+                <p>In Makhosi weZulu we trust</p>
+            </div>
+        </div>
+
+        <!-- Second Image with Overlay -->
+        <div class="image-background" style="background-image: url('images/home-back.jpg');">
+            <div class="overlay-container">
+                <p class="small-text">Makhosi weZulu Trading (Pty)Ltd is the business that is 100% black owned. It originates from eMalahleni where the business acts as a multi-Disciplinary company, able to execute task which are scaled from small to large size operations. We are a company with excellent performance in Building Construction, Mining, and General.</p>
+                <a href="about.php" class="overlay-btn">Learn more</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- New Section with Background Images and Buttons -->
+    <section class="background-section">
+        <div class="background-container">
+            <!-- Left Background Image with Services Summary -->
+            <div class="background-item" style="background-image: url('images/services-offered.jpg');">
+                <div class="background-overlay">
+                    <h2>Our Services</h2>
+                    <p>We offer a wide range of services including construction, mining, and industrial supply. Our team is dedicated to delivering high-quality solutions tailored to your needs.</p>
+                    <a href="services.php" class="btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Right Background Image with Contact Summary -->
+            <div class="background-item" style="background-image: url('images/engineering\ tools.jpg');">
+                <div class="background-overlay">
+                    <h2>Contact Us</h2>
+                    <p>Get in touch with us today to discuss your project requirements. Our team is ready to assist you with expert advice and solutions.</p>
+                    <a href="contact.php" class="btn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Makhosi weZulu. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.querySelector('nav');
+    
+            hamburger.addEventListener('click', function () {
+                nav.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
